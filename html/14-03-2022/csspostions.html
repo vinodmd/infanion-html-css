@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .conatiner{
+            border: 2px solid black;
+            color:khaki;
+            height:10000px;
+        }
+        .boxes{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+        }
+        #box3{
+            position: absolute; /*it depends on conatiner position: ;
+*/            top:24px;
+            left:24px;
+        }
+        #box4{
+            /*it depends on current position of the element position:*/  
+            position:relative;
+            top:24px;
+            left:24px;
+        }
+
+        #box1{
+            position: fixed;
+            right:43px;
+        }
+        #box2
+        {
+            position:sticky;
+            top:2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conatiner">
+        <div class="boxes" id="box1">this is box 1</div>
+        <div class="boxes" id="box2">this is box 2</div>
+        <div class="boxes" id="box3">this is box 3</div>
+        <div class="boxes" id="box4">this is box 4</div>
+    </div>
+</body>
+</html>

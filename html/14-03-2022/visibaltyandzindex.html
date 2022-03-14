@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boxs
+        {
+            width:70px;
+            height:70px;
+            border: 2px solid black;
+        }
+        #box1{background-color: aliceblue;border: 2px solid gray; position: relative; z-index: -1; left:24px; top:30px; }
+        #box2{background-color: aqua; border: 2px solid gray; position: relative;}
+        #box3{background-color:brown; position:absolute; z-index: 1; left:24px; top:30px;}
+        #box4{border-color:blue;border: 2px solid gray;visibility: hidden;}
+    </style>
+</head>
+<body>
+    <div class="boxs" id="box1">am z index -1</div>
+    <div class="boxs" id="box2">am without z index</div>
+    <div class="boxs" id="box3">am z index 1</div>
+    <div class="boxs" id="box4">4</div> am hidden
+</body>
+</html>
